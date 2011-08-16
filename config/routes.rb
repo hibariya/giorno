@@ -1,4 +1,10 @@
 Nikki::Application.routes.draw do
+  namespace :admin do
+    resources :entries
+  end
+
+  resources :entries, only: %w(index show)
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

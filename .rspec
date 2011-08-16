@@ -1,0 +1,2 @@
+--colour
+--format <%= ENV['RSPEC_FORMAT'] || 'Fuubar' %>
