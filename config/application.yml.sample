@@ -1,0 +1,14 @@
+defaults: &defaults
+  password_secret: 'c-r-a-v-e'
+  title: 'nikki'
+  description: 'nikki description'
+  author: 'nikki'
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults

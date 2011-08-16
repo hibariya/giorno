@@ -1,2 +1,9 @@
-%h1 Entries#index
-%p Find me in app/views/entries/index.html.haml
+#entries
+  - @entries.each do |entry|
+    .entry
+      .info
+        .title= entry.title
+        .timestamps
+          .created_at= entry.created_at
+          .updated_at= entry.updated_at
+      .body= entry.body

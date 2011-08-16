@@ -7,6 +7,7 @@ gem 'haml-rails', git: 'git://github.com/indirect/haml-rails.git'
 gem 'omniauth', git: 'git://github.com/intridea/omniauth.git'
 gem 'kaminari'
 gem 'sqlite3'
+gem 'settingslogic'
 
 group :development, :test do
   gem 'capybara'
