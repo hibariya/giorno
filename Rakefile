@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Nikki::Application.load_tasks
+Giorno::Application.load_tasks

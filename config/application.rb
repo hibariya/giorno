@@ -13,7 +13,7 @@ require "active_resource/railtie"
 # or test environments.
 Bundler.require *Rails.groups(:assets) if defined?(Bundler)
 
-module Nikki
+module Giorno
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers

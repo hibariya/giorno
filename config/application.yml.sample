@@ -1,8 +1,8 @@
 defaults: &defaults
   password_secret: 'c-r-a-v-e'
-  title: 'nikki'
-  description: 'nikki description'
-  author: 'nikki'
+  title: 'giorno'
+  description: 'giorno description'
+  author: 'giorno'
 
 development:
   <<: *defaults
