@@ -9,6 +9,10 @@
     = yield :head
   %body{class: controller_name}
     #head
+      - if signed_in?
+        .sign_out= link_to 'サインアウト', signout_path, method: :delete
+      - else
+        .sign_in= link_to 'サインイン', signin_path
     #page
       = yield
     #foot

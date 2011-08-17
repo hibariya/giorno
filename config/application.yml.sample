@@ -3,6 +3,8 @@ defaults: &defaults
   title: 'giorno'
   description: 'giorno description'
   author: 'giorno'
+  open_id:
+    uid: 'open_id identity url'
 
 development:
   <<: *defaults
