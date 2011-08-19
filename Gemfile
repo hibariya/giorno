@@ -8,6 +8,7 @@ gem 'omniauth', git: 'git://github.com/intridea/omniauth.git'
 gem 'kaminari'
 gem 'sqlite3'
 gem 'settingslogic'
+gem 'heroku'
 
 group :development, :test do
   gem 'capybara'
