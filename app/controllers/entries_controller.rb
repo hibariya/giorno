@@ -1,6 +1,6 @@
 class EntriesController < ApplicationController
   def index
-    @entries = Entry.order('created_at ASC')
+    @entries = Entry.scoped
 
     respond_to do |format|
       format.html
