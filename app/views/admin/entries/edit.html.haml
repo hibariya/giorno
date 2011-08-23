@@ -1,2 +1,11 @@
-%h1 Admin::Entries#edit
-%p Find me in app/views/admin/entries/edit.html.haml
+= link_to '一覧', admin_entries_path
+#entry
+  = form_for [:admin, @entry] do |f|
+    %fieldset
+      %legend= f.label :title
+      = f.text_field :title
+    %fieldset
+      %legend= f.label :body
+      = f.text_area :body
+    = f.submit
+

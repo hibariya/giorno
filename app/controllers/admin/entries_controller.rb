@@ -14,9 +14,13 @@ class Admin::EntriesController < ApplicationController
   def update
     @entry = Entry.find(params[:id])
     @entry.update_attributes! params[:entry]
+    
+    redirect_to edit_admin_entry_path(@entry)
   end
 
   def destroy
     Entry.destroy params[:id]
+
+    redirect_to admin_entries_path
   end
 end
